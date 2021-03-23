@@ -54,6 +54,7 @@
 }
 
 .footer__text {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
