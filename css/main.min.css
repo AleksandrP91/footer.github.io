@@ -64,9 +64,10 @@
 }
 
 .footer__text p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  min-width: 222px;
+  min-width: 200px;
+  text-align: center;
 }
 
 .footer__content {
@@ -678,35 +679,44 @@ input:invalid:not(:placeholder-shown) + .footer__required {
 }
 
 @media (max-width: 991px) {
-  .footer__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
   .footer__content--left {
-    max-width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 68%;
+    flex: 0 1 68%;
+    max-width: 68%;
   }
   .footer__content--right {
-    margin-top: 40px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 30%;
+    flex: 0 1 30%;
+    max-width: 30%;
+  }
+  .footer__content--right h3 {
+    font-size: 14px;
+    max-width: 200px;
+  }
+  .footer__list-company {
+    max-width: 160px;
+  }
+  .footer__list-info {
+    max-width: 160px;
+  }
+  .footer__content--right {
     max-width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
   .form__input {
-    max-width: 280px;
+    max-width: 200px;
   }
   .form__button {
-    max-width: 280px;
-  }
-  .form__link {
-    text-align: center;
+    max-width: 200px;
   }
   .form__checkbox p {
-    padding-left: 20px;
+    padding-left: 18px;
     font-size: 9px;
-    max-width: 258px;
+    max-width: 188px;
   }
   .footer__content-cabinet {
     padding-right: 0;
@@ -762,8 +772,27 @@ input:invalid:not(:placeholder-shown) + .footer__required {
 }
 
 @media (max-width: 767px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__content--left {
+    max-width: 100%;
+  }
   .form {
     padding-top: 40px;
+  }
+  .form__input {
+    max-width: 260px;
+  }
+  .form__button {
+    max-width: 260px;
+  }
+  .form__checkbox p {
+    padding-left: 28px;
+    max-width: 238px;
   }
   .footer__content-cabinet {
     width: 100%;
@@ -865,6 +894,9 @@ input:invalid:not(:placeholder-shown) + .footer__required {
   }
   .footer__content--right {
     margin-top: 20px;
+  }
+  .footer__content--right h3 {
+    max-width: 245px;
   }
   .footer__content-box {
     cursor: pointer;
