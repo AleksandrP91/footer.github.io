@@ -456,7 +456,7 @@ input:invalid:not(:placeholder-shown) + .form__required {
 }
 
 .social__wrapp {
-  padding-top: 8px;
+  padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,10 +517,13 @@ input:invalid:not(:placeholder-shown) + .form__required {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .pay__icon {
-  padding-right: 6px;
+  padding-right: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,16 +538,10 @@ input:invalid:not(:placeholder-shown) + .form__required {
 
 .pay__icon img {
   width: 50px;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 
-.pay__icon:nth-child(3) img {
-  width: 60px;
-}
-
-.pay__icon:last-child img {
-  width: 34px;
+.pay__icon:last-child {
+  padding-right: 0;
 }
 
 @media (max-width: 991px) {
