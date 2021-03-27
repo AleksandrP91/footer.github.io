@@ -108,6 +108,10 @@
   text-decoration: none;
 }
 
+.content__link-transparent {
+  color: transparent;
+}
+
 .content__link:hover {
   color: #989696;
   text-decoration: underline;
@@ -117,7 +121,6 @@
 }
 
 .content__text {
-  padding-top: 32px;
   display: inline-block;
   font-size: 14px;
   color: #fff;
@@ -446,8 +449,8 @@ input:invalid:not(:placeholder-shown) + .form__required {
 }
 
 .social__title h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
 }
@@ -474,9 +477,13 @@ input:invalid:not(:placeholder-shown) + .form__required {
   align-items: center;
 }
 
+.social__icon img {
+  width: 26px;
+}
+
 .social__icon span {
-  font-size: 8px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -499,8 +506,8 @@ input:invalid:not(:placeholder-shown) + .form__required {
 }
 
 .pay__title h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
 }
@@ -527,17 +534,17 @@ input:invalid:not(:placeholder-shown) + .form__required {
 }
 
 .pay__icon img {
-  width: 40px;
+  width: 50px;
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 .pay__icon:nth-child(3) img {
-  width: 50px;
+  width: 60px;
 }
 
 .pay__icon:last-child img {
-  width: 26px;
+  width: 34px;
 }
 
 @media (max-width: 991px) {
@@ -655,6 +662,9 @@ input:invalid:not(:placeholder-shown) + .form__required {
     align-items: center;
   }
   .pay__title h3 {
+    text-align: center;
+  }
+  .social__title h3 {
     text-align: center;
   }
 }
