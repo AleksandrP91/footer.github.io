@@ -561,25 +561,6 @@ input:invalid:not(:placeholder-shown) + .form__required {
   .footer__form {
     padding-top: 30px;
   }
-  .footer__line {
-    position: relative;
-  }
-  .footer__line::after {
-    content: '';
-    position: absolute;
-    bottom: 12px;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.096);
-  }
-  .footer__line::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.096);
-  }
   .footer__bottom-wrapp {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -593,6 +574,12 @@ input:invalid:not(:placeholder-shown) + .form__required {
     padding-top: 0;
     height: 0;
     overflow-y: auto;
+  }
+  .content__item {
+    padding-bottom: 6px;
+  }
+  .content__item:last-child {
+    padding-bottom: 0;
   }
   .content__title {
     padding: 8px 0;
