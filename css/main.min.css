@@ -591,16 +591,13 @@ input:invalid:not(:placeholder-shown) + .form__required {
     text-align: center;
   }
   .footer__bottom {
-    padding-top: 20px;
+    padding-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-  .footer__subscription {
-    padding-top: 20px;
   }
   .footer__bottom-copyright {
     padding-right: 0;
@@ -695,6 +692,9 @@ input:invalid:not(:placeholder-shown) + .form__required {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+  .footer__subscription {
+    padding-top: 20px;
   }
 }
 
