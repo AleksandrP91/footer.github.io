@@ -657,7 +657,7 @@ input:invalid:not(:placeholder-shown) + .form__required {
     padding-bottom: 0;
   }
   .content__title {
-    padding: 18px 0 6px 0;
+    padding: 22px 0 6px 0;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
